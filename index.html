@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple API</title>
+</head>
+<body>
+<pre id="output">Loading...</pre>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+const limit = parseInt(params.get("limit")) || 10;
+const page = parseInt(params.get("page")) || 1;
+
+fetch("data.json")
+  .then(res => res.json())
+  .then(data => {
+    const start = (page - 1) * limit;
+    const end = start + limit;
+
+    const result = data.slice(start, end);
+
+    const response = {
+      success: true,
+      page: page,
+      limit: limit,
+      total: data.length,
+      data: result
+    };
+
+    document.getElementById("output").textContent =
+      JSON.stringify(response, null, 2);
+  })
+  .catch(err => {
+    document.getElementById("output").textContent =
+      JSON.stringify({ success: false, error: err.message }, null, 2);
+  });
+</script>
+</body>
+</html>
