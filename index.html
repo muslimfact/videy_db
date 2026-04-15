@@ -9,22 +9,28 @@
 <script>
 const params = new URLSearchParams(window.location.search);
 
-const limit = parseInt(params.get("limit")) || 10;
+// default limit = 100
+const limit = parseInt(params.get("limit")) || 100;
 const page = parseInt(params.get("page")) || 1;
 
 fetch("data.json")
   .then(res => res.json())
   .then(data => {
+
+    // 🔥 urutkan terbaru di atas
+    const sortedData = data.slice().reverse();
+
     const start = (page - 1) * limit;
     const end = start + limit;
 
-    const result = data.slice(start, end);
+    const result = sortedData.slice(start, end);
 
     const response = {
       success: true,
       page: page,
       limit: limit,
-      total: data.length,
+      total: sortedData.length,
+      total_page: Math.ceil(sortedData.length / limit),
       data: result
     };
 
