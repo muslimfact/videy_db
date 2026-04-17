@@ -1,14 +1,45 @@
 [
   {
     "title": "Video 1",
-    "video": "https://example.com/1.mp4"
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani3.mp4"
   },
   {
     "title": "Video 2",
-    "video": "https://example.com/2.mp4"
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani_gpu_10000.mp4"
+  },
+    {
+    "title": "Video 1",
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani3.mp4"
   },
   {
-    "title": "Video 3",
-    "video": "https://example.com/3.mp4"
-  }
+    "title": "Video 2",
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani_gpu_10000.mp4"
+  },
+
+    {
+    "title": "Video 1",
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani3.mp4"
+  },
+  {
+    "title": "Video 2",
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani_gpu_10000.mp4"
+  },
+
+    {
+    "title": "Video 1",
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani3.mp4"
+  },
+  {
+    "title": "Video 2",
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani_gpu_10000.mp4"
+  },
+    {
+    "title": "Video 1",
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani3.mp4"
+  },
+  {
+    "title": "Video 2",
+    "video": "http://kuliah.unnes.ac.id/~hardy/video/ani_gpu_10000.mp4"
+  },
+  
 ]
